@@ -1,4 +1,4 @@
-#!/Users/matthew/Documents/deepmind_internship/venv-py311/bin/python3.11
+#!/Users/matthew/Documents/deepmind_internship/venv-py311/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

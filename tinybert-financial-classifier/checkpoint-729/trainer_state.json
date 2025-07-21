@@ -1,0 +1,159 @@
+{
+  "best_global_step": 729,
+  "best_metric": 0.8103092783505155,
+  "best_model_checkpoint": "./tinybert-financial-classifier/checkpoint-729",
+  "epoch": 3.0,
+  "eval_steps": 500,
+  "global_step": 729,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 0.205761316872428,
+      "grad_norm": 0.8035486340522766,
+      "learning_rate": 1.8655692729766806e-05,
+      "loss": 1.0236,
+      "step": 50
+    },
+    {
+      "epoch": 0.411522633744856,
+      "grad_norm": 1.761521577835083,
+      "learning_rate": 1.728395061728395e-05,
+      "loss": 0.9033,
+      "step": 100
+    },
+    {
+      "epoch": 0.6172839506172839,
+      "grad_norm": 3.1102898120880127,
+      "learning_rate": 1.5912208504801098e-05,
+      "loss": 0.8262,
+      "step": 150
+    },
+    {
+      "epoch": 0.823045267489712,
+      "grad_norm": 2.7821269035339355,
+      "learning_rate": 1.4540466392318244e-05,
+      "loss": 0.7666,
+      "step": 200
+    },
+    {
+      "epoch": 1.0,
+      "eval_accuracy": 0.743298969072165,
+      "eval_loss": 0.7105885148048401,
+      "eval_runtime": 5.1402,
+      "eval_samples_per_second": 188.707,
+      "eval_steps_per_second": 11.867,
+      "step": 243
+    },
+    {
+      "epoch": 1.02880658436214,
+      "grad_norm": 8.997822761535645,
+      "learning_rate": 1.3168724279835392e-05,
+      "loss": 0.7222,
+      "step": 250
+    },
+    {
+      "epoch": 1.2345679012345678,
+      "grad_norm": 5.018407344818115,
+      "learning_rate": 1.179698216735254e-05,
+      "loss": 0.6813,
+      "step": 300
+    },
+    {
+      "epoch": 1.4403292181069958,
+      "grad_norm": 5.827891826629639,
+      "learning_rate": 1.0425240054869686e-05,
+      "loss": 0.6458,
+      "step": 350
+    },
+    {
+      "epoch": 1.646090534979424,
+      "grad_norm": 12.970186233520508,
+      "learning_rate": 9.053497942386832e-06,
+      "loss": 0.6292,
+      "step": 400
+    },
+    {
+      "epoch": 1.8518518518518519,
+      "grad_norm": 10.438143730163574,
+      "learning_rate": 7.681755829903978e-06,
+      "loss": 0.5855,
+      "step": 450
+    },
+    {
+      "epoch": 2.0,
+      "eval_accuracy": 0.8010309278350516,
+      "eval_loss": 0.592329204082489,
+      "eval_runtime": 4.4081,
+      "eval_samples_per_second": 220.049,
+      "eval_steps_per_second": 13.838,
+      "step": 486
+    },
+    {
+      "epoch": 2.05761316872428,
+      "grad_norm": 5.753931999206543,
+      "learning_rate": 6.310013717421125e-06,
+      "loss": 0.5563,
+      "step": 500
+    },
+    {
+      "epoch": 2.263374485596708,
+      "grad_norm": 10.436873435974121,
+      "learning_rate": 4.938271604938272e-06,
+      "loss": 0.5476,
+      "step": 550
+    },
+    {
+      "epoch": 2.4691358024691357,
+      "grad_norm": 3.6837854385375977,
+      "learning_rate": 3.566529492455419e-06,
+      "loss": 0.538,
+      "step": 600
+    },
+    {
+      "epoch": 2.674897119341564,
+      "grad_norm": 8.004606246948242,
+      "learning_rate": 2.194787379972565e-06,
+      "loss": 0.5043,
+      "step": 650
+    },
+    {
+      "epoch": 2.8806584362139915,
+      "grad_norm": 17.507417678833008,
+      "learning_rate": 8.23045267489712e-07,
+      "loss": 0.5072,
+      "step": 700
+    },
+    {
+      "epoch": 3.0,
+      "eval_accuracy": 0.8103092783505155,
+      "eval_loss": 0.5539327263832092,
+      "eval_runtime": 4.4132,
+      "eval_samples_per_second": 219.793,
+      "eval_steps_per_second": 13.822,
+      "step": 729
+    }
+  ],
+  "logging_steps": 50,
+  "max_steps": 729,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 3,
+  "save_steps": 500,
+  "stateful_callbacks": {
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": true
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 41686257208320.0,
+  "train_batch_size": 16,
+  "trial_name": null,
+  "trial_params": null
+}
