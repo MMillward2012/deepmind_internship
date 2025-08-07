@@ -1,0 +1,54 @@
+{
+  "confusion_patterns": {
+    "neutral -> positive": 84,
+    "neutral -> negative": 38,
+    "negative -> neutral": 18,
+    "positive -> neutral": 78,
+    "positive -> negative": 30,
+    "negative -> positive": 5
+  },
+  "problematic_keywords": [
+    [
+      "solutions",
+      0.017642307778868598
+    ],
+    [
+      "pct",
+      0.01485029608787802
+    ],
+    [
+      "new",
+      0.014273101813152375
+    ],
+    [
+      "compared",
+      0.013439370058720606
+    ],
+    [
+      "oyj",
+      0.012135067934007968
+    ],
+    [
+      "mln",
+      0.01187757726847124
+    ],
+    [
+      "months",
+      0.010891654025831945
+    ],
+    [
+      "place",
+      0.0106956680668756
+    ],
+    [
+      "line",
+      0.010674308959807867
+    ],
+    [
+      "increase",
+      0.010550029505982515
+    ]
+  ],
+  "total_errors": 253,
+  "error_rate": 20.874587458745875
+}

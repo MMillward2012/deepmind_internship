@@ -1,0 +1,1035 @@
+{
+  "summary": {
+    "total_examples": 1212,
+    "misclassified_count": 253,
+    "misclassification_rate": 0.20874587458745875,
+    "label_classes": [
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "confusion_matrix": {
+    "neutral_to_positive": 84,
+    "neutral_to_negative": 38,
+    "negative_to_neutral": 18,
+    "positive_to_neutral": 78,
+    "positive_to_negative": 30,
+    "negative_to_positive": 5
+  },
+  "problematic_keywords": [
+    {
+      "keyword": "pct",
+      "misclassified_score": 0.013015959037335555,
+      "correct_score": 0.002097391373011994,
+      "difference": 0.010918567664323562
+    },
+    {
+      "keyword": "solutions",
+      "misclassified_score": 0.012493505074910594,
+      "correct_score": 0.0021562353236511617,
+      "difference": 0.010337269751259433
+    },
+    {
+      "keyword": "compared",
+      "misclassified_score": 0.013277849302663947,
+      "correct_score": 0.004018559590706285,
+      "difference": 0.009259289711957663
+    },
+    {
+      "keyword": "new",
+      "misclassified_score": 0.018833338603809466,
+      "correct_score": 0.009901027006590015,
+      "difference": 0.008932311597219451
+    },
+    {
+      "keyword": "mln",
+      "misclassified_score": 0.019070605492731752,
+      "correct_score": 0.010653937802514092,
+      "difference": 0.00841666769021766
+    },
+    {
+      "keyword": "line",
+      "misclassified_score": 0.010322505764963467,
+      "correct_score": 0.002186629957961411,
+      "difference": 0.008135875807002056
+    },
+    {
+      "keyword": "increase",
+      "misclassified_score": 0.011067986495720602,
+      "correct_score": 0.003591917323369717,
+      "difference": 0.007476069172350885
+    },
+    {
+      "keyword": "months",
+      "misclassified_score": 0.008369888711604665,
+      "correct_score": 0.0009427099142690343,
+      "difference": 0.00742717879733563
+    },
+    {
+      "keyword": "reach",
+      "misclassified_score": 0.007344402965290432,
+      "correct_score": 0.0,
+      "difference": 0.007344402965290432
+    },
+    {
+      "keyword": "fortum",
+      "misclassified_score": 0.008844377609505988,
+      "correct_score": 0.0015014828418226194,
+      "difference": 0.007342894767683368
+    },
+    {
+      "keyword": "oyj",
+      "misclassified_score": 0.0114095230560828,
+      "correct_score": 0.004351281285704098,
+      "difference": 0.007058241770378702
+    },
+    {
+      "keyword": "place",
+      "misclassified_score": 0.009538331955503042,
+      "correct_score": 0.0028907749721948516,
+      "difference": 0.006647556983308191
+    },
+    {
+      "keyword": "higher",
+      "misclassified_score": 0.0074198553530946424,
+      "correct_score": 0.000812749657831662,
+      "difference": 0.00660710569526298
+    },
+    {
+      "keyword": "devices",
+      "misclassified_score": 0.007618800216238574,
+      "correct_score": 0.0010383086381719738,
+      "difference": 0.006580491578066601
+    },
+    {
+      "keyword": "based",
+      "misclassified_score": 0.01252431357706085,
+      "correct_score": 0.006059913669709249,
+      "difference": 0.0064643999073516
+    },
+    {
+      "keyword": "100",
+      "misclassified_score": 0.006431397934846277,
+      "correct_score": 0.0,
+      "difference": 0.006431397934846277
+    },
+    {
+      "keyword": "outokumpu",
+      "misclassified_score": 0.006147764499578613,
+      "correct_score": 0.0,
+      "difference": 0.006147764499578613
+    },
+    {
+      "keyword": "users",
+      "misclassified_score": 0.00613652715148649,
+      "correct_score": 0.0,
+      "difference": 0.00613652715148649
+    },
+    {
+      "keyword": "list",
+      "misclassified_score": 0.006136084310411435,
+      "correct_score": 0.0,
+      "difference": 0.006136084310411435
+    },
+    {
+      "keyword": "raisio",
+      "misclassified_score": 0.006115271425661059,
+      "correct_score": 0.0,
+      "difference": 0.006115271425661059
+    },
+    {
+      "keyword": "signed",
+      "misclassified_score": 0.009957037509079726,
+      "correct_score": 0.00390602879264617,
+      "difference": 0.006051008716433557
+    },
+    {
+      "keyword": "platform",
+      "misclassified_score": 0.005984818376960055,
+      "correct_score": 0.0,
+      "difference": 0.005984818376960055
+    },
+    {
+      "keyword": "nordea",
+      "misclassified_score": 0.007613328059408128,
+      "correct_score": 0.0017567852859077353,
+      "difference": 0.005856542773500392
+    },
+    {
+      "keyword": "life",
+      "misclassified_score": 0.005788303457868956,
+      "correct_score": 0.0,
+      "difference": 0.005788303457868956
+    },
+    {
+      "keyword": "set",
+      "misclassified_score": 0.005770284038257917,
+      "correct_score": 0.0,
+      "difference": 0.005770284038257917
+    },
+    {
+      "keyword": "price",
+      "misclassified_score": 0.008577141736770403,
+      "correct_score": 0.0029043311751400357,
+      "difference": 0.0056728105616303676
+    },
+    {
+      "keyword": "control",
+      "misclassified_score": 0.00551754671055671,
+      "correct_score": 0.0,
+      "difference": 0.00551754671055671
+    },
+    {
+      "keyword": "expects",
+      "misclassified_score": 0.00796886006468657,
+      "correct_score": 0.002512400861365085,
+      "difference": 0.005456459203321485
+    },
+    {
+      "keyword": "seen",
+      "misclassified_score": 0.0054083146028316015,
+      "correct_score": 0.0,
+      "difference": 0.0054083146028316015
+    },
+    {
+      "keyword": "make",
+      "misclassified_score": 0.008761060237486615,
+      "correct_score": 0.003355248797268083,
+      "difference": 0.005405811440218532
+    },
+    {
+      "keyword": "warning",
+      "misclassified_score": 0.0053888494430168925,
+      "correct_score": 0.0,
+      "difference": 0.0053888494430168925
+    },
+    {
+      "keyword": "profit warning",
+      "misclassified_score": 0.0053888494430168925,
+      "correct_score": 0.0,
+      "difference": 0.0053888494430168925
+    },
+    {
+      "keyword": "index",
+      "misclassified_score": 0.005366901670875274,
+      "correct_score": 0.0,
+      "difference": 0.005366901670875274
+    },
+    {
+      "keyword": "agreed",
+      "misclassified_score": 0.007743265054157128,
+      "correct_score": 0.0024345121548932703,
+      "difference": 0.005308752899263858
+    },
+    {
+      "keyword": "week",
+      "misclassified_score": 0.0052919835568921245,
+      "correct_score": 0.0,
+      "difference": 0.0052919835568921245
+    },
+    {
+      "keyword": "location",
+      "misclassified_score": 0.006196019088329769,
+      "correct_score": 0.0010383086381719738,
+      "difference": 0.005157710450157796
+    },
+    {
+      "keyword": "fall",
+      "misclassified_score": 0.0059888849668076494,
+      "correct_score": 0.0008633480588304603,
+      "difference": 0.005125536907977189
+    },
+    {
+      "keyword": "security",
+      "misclassified_score": 0.005101009800039002,
+      "correct_score": 0.0,
+      "difference": 0.005101009800039002
+    },
+    {
+      "keyword": "real",
+      "misclassified_score": 0.006839666111473078,
+      "correct_score": 0.0017387804823998207,
+      "difference": 0.0051008856290732565
+    },
+    {
+      "keyword": "atria",
+      "misclassified_score": 0.006200082555988792,
+      "correct_score": 0.0011066913761999136,
+      "difference": 0.005093391179788879
+    },
+    {
+      "keyword": "management",
+      "misclassified_score": 0.008680161504136853,
+      "correct_score": 0.0036607703182908566,
+      "difference": 0.005019391185845996
+    },
+    {
+      "keyword": "industrial",
+      "misclassified_score": 0.005726543525920242,
+      "correct_score": 0.0007435278160579429,
+      "difference": 0.0049830157098622995
+    },
+    {
+      "keyword": "information",
+      "misclassified_score": 0.005629803045871538,
+      "correct_score": 0.0006715943468770379,
+      "difference": 0.004958208698994501
+    },
+    {
+      "keyword": "customers",
+      "misclassified_score": 0.007429040483896855,
+      "correct_score": 0.002487803394067507,
+      "difference": 0.004941237089829348
+    },
+    {
+      "keyword": "oil",
+      "misclassified_score": 0.006845193726449863,
+      "correct_score": 0.001980412108716445,
+      "difference": 0.0048647816177334186
+    },
+    {
+      "keyword": "offer",
+      "misclassified_score": 0.005656983342020588,
+      "correct_score": 0.000794803240953846,
+      "difference": 0.0048621801010667424
+    },
+    {
+      "keyword": "issued",
+      "misclassified_score": 0.005797711851891309,
+      "correct_score": 0.000954169180609424,
+      "difference": 0.004843542671281885
+    },
+    {
+      "keyword": "service",
+      "misclassified_score": 0.009438434597561624,
+      "correct_score": 0.0046100561660397275,
+      "difference": 0.004828378431521897
+    },
+    {
+      "keyword": "12",
+      "misclassified_score": 0.007063218904201142,
+      "correct_score": 0.0022524082917598043,
+      "difference": 0.004810810612441338
+    },
+    {
+      "keyword": "cloud",
+      "misclassified_score": 0.004794109514490664,
+      "correct_score": 0.0,
+      "difference": 0.004794109514490664
+    }
+  ],
+  "confusion_analysis": {
+    "negative_to_neutral": {
+      "count": 18,
+      "examples": [
+        "Finnish Bank of +_land +_landsbanken has issued a profit warning .",
+        "According to Swedish authorities , traces of the very toxic osmium tetroxide have been found on the coast of Per+Æmeri , the Northernmost part of the Gulf of Bothnia .",
+        "Finnish meat company Atria can no longer promise a sufficient amount of domestic beef to its customers ."
+      ],
+      "key_terms": [
+        "finnish",
+        "issued profit",
+        "profit warning",
+        "warning",
+        "profit",
+        "issued",
+        "company",
+        "outokumpu",
+        "work",
+        "work seen"
+      ]
+    },
+    "negative_to_positive": {
+      "count": 5,
+      "examples": [
+        "Based on the first quarter result , existing order backlog and new order prospects , the company expects that full-year sales will contract by 25 % from 2008 , the gross margin will stay at a healthy level , and the operating profit margin will be lower than in 2008 due to lower sales volume .",
+        "( ADPnews ) - Oct 21 , 2009 - Finland-based IT consultancy Tieto Oyj ( HEL : TIE1V ) said today its net profit plunged to EUR 29.4 million ( USD 43.9 m ) for the first nine months of 2009 from EUR 58.7 million for the same period o",
+        "TeliaSonera 's underlying results however included 457 mln skr in positive one-offs , hence the adjusted underlying EBITDA actually amounts to 7.309 bln skr , clearly below expectations , analysts said ."
+      ],
+      "key_terms": [
+        "2008",
+        "skr",
+        "underlying",
+        "profit",
+        "neteller",
+        "neteller cheaper",
+        "recent",
+        "troubles simply",
+        "troubles",
+        "recent troubles"
+      ]
+    },
+    "neutral_to_negative": {
+      "count": 38,
+      "examples": [
+        "Calls to the switchboard and directory services have decreased significantly since our employees now have up-to-date contact information from all their colleagues and customers on their phone and can place the call directly .",
+        "High winds also toppled three semi-trailers on I-15 north of Barstow .",
+        "Temporary layoffs in these units have already started ."
+      ],
+      "key_terms": [
+        "pct",
+        "eur",
+        "said",
+        "started",
+        "fall",
+        "time",
+        "place",
+        "finland",
+        "sales",
+        "lower"
+      ]
+    },
+    "neutral_to_positive": {
+      "count": 84,
+      "examples": [
+        "Le Lay succeeds Walter G++nter and will be based in Finland .",
+        "The Finnish real estate investment company Interavanti Oyj said on Monday ( 22 September ) that it has agreed to sell its 65 % ownership in the Finnish ticket service company Lippupiste Oy to CTS Eventim AG ( 56,1 % ) and to the managing director of Lippupiste Oy .",
+        "` It is a testament to the quality of our LTE solution and our commitment to the Japanese market ' , he added ."
+      ],
+      "key_terms": [
+        "company",
+        "market",
+        "business",
+        "mln",
+        "increase",
+        "new",
+        "eur",
+        "said",
+        "shares",
+        "share"
+      ]
+    },
+    "positive_to_negative": {
+      "count": 30,
+      "examples": [
+        "Key shareholders of Finnish IT services provider TietoEnator Oyj on Friday rejected a hostile EUR1 .08 billion $ 1.67 billion offer from buyout shop Nordic Capital , giving new life to a possible counter offer from Blackstone Group LP and Norwegian telecom Telenor ASA .",
+        "Operating profit totaled EUR 17.7 mn compared to EUR 17.6 mn in the corresponding period in 2007 .",
+        "SOUTHFIELD , Mich. -- Central Corporate Credit Union will again distribute patronage dividends to members by waiving all service fees incurred during the months of July and November 2008 , to the tune of an estimated $ 1 million ."
+      ],
+      "key_terms": [
+        "eur",
+        "mn",
+        "loss",
+        "compared",
+        "mln",
+        "million",
+        "said",
+        "net",
+        "eur mn",
+        "loss eur"
+      ]
+    },
+    "positive_to_neutral": {
+      "count": 78,
+      "examples": [
+        "Asimilar agreement was signed between China Mobile Ltd. ( SEHK : 0941 and NYSE : CHL ) , the largest mobile carrier , and theGPS and social networking service provider , promoting GyPSii service before Beijing 2008 Olympic Games , according to thelatest news .",
+        "Xerox and Stora Enso have teamed up to tailor the iGen3 to the short-run , on-demand packaging market .",
+        "Cargotec Corporation , Press Release , April 28 , 2008 at 2.00 p.m. Finnish time Cargotec 's MacGREGOR business area providing marine cargo handling and offshore load handling solutions has received significant hatch cover orders for bulk carriers ."
+      ],
+      "key_terms": [
+        "company",
+        "new",
+        "finnish",
+        "nokia",
+        "finland",
+        "signed",
+        "expects",
+        "service",
+        "said",
+        "line"
+      ]
+    }
+  },
+  "sentence_patterns": {
+    "counts": {
+      "question_marks": 0,
+      "exclamation_marks": 0,
+      "negations": 72,
+      "financial_terms": 97,
+      "uncertainty_words": 11,
+      "comparative_terms": 38,
+      "temporal_references": 49
+    },
+    "examples": {
+      "negations": [
+        "Calls to the switchboard and directory services have decreased significantly since our employees now have up-to-date contact information from all their colleagues and customers on their phone and can place the call directly .",
+        "High winds also toppled three semi-trailers on I-15 north of Barstow .",
+        "Key shareholders of Finnish IT services provider TietoEnator Oyj on Friday rejected a hostile EUR1 .08 billion $ 1.67 billion offer from buyout shop Nordic Capital , giving new life to a possible counter offer from Blackstone Group LP and Norwegian telecom Telenor ASA .",
+        "TietoEnator signed an agreement to acquire Indian research and development ( R&D ) services provider and turnkey software solutions developer Fortuna Technologies Pvt. Ltd. for 21 mln euro ( $ 30.3 mln ) in September 2007 .",
+        "SOUTHFIELD , Mich. -- Central Corporate Credit Union will again distribute patronage dividends to members by waiving all service fees incurred during the months of July and November 2008 , to the tune of an estimated $ 1 million ."
+      ],
+      "comparative_terms": [
+        "Calls to the switchboard and directory services have decreased significantly since our employees now have up-to-date contact information from all their colleagues and customers on their phone and can place the call directly .",
+        "Operating profit totaled EUR 17.7 mn compared to EUR 17.6 mn in the corresponding period in 2007 .",
+        "Based on the first quarter result , existing order backlog and new order prospects , the company expects that full-year sales will contract by 25 % from 2008 , the gross margin will stay at a healthy level , and the operating profit margin will be lower than in 2008 due to lower sales volume .",
+        "Sales came in at 241 mln eur , compared with 211.4 mln , and also beating consensus forecasts of 235 mln eur .",
+        "Marimekko makes all sorts of colorful little impulse buys `` umbrellas , baby bibs , change purses `` and they 're all for sale , the better to take advantage of shoppers who ca n't commit to furniture but want a piece of the action ."
+      ],
+      "financial_terms": [
+        "The Finnish real estate investment company Interavanti Oyj said on Monday ( 22 September ) that it has agreed to sell its 65 % ownership in the Finnish ticket service company Lippupiste Oy to CTS Eventim AG ( 56,1 % ) and to the managing director of Lippupiste Oy .",
+        "` It is a testament to the quality of our LTE solution and our commitment to the Japanese market ' , he added .",
+        "Finnish Bank of +_land +_landsbanken has issued a profit warning .",
+        "Key shareholders of Finnish IT services provider TietoEnator Oyj on Friday rejected a hostile EUR1 .08 billion $ 1.67 billion offer from buyout shop Nordic Capital , giving new life to a possible counter offer from Blackstone Group LP and Norwegian telecom Telenor ASA .",
+        "Xerox and Stora Enso have teamed up to tailor the iGen3 to the short-run , on-demand packaging market ."
+      ],
+      "temporal_references": [
+        "Based on the first quarter result , existing order backlog and new order prospects , the company expects that full-year sales will contract by 25 % from 2008 , the gross margin will stay at a healthy level , and the operating profit margin will be lower than in 2008 due to lower sales volume .",
+        "SOUTHFIELD , Mich. -- Central Corporate Credit Union will again distribute patronage dividends to members by waiving all service fees incurred during the months of July and November 2008 , to the tune of an estimated $ 1 million .",
+        "Affecto has helped SKAT to set up the platform and has previously delivered several Business Intelligence projects for SKAT .",
+        "In contrast , the company 's net loss for the third quarter of 2009 contracted to EUR 76 million from EUR 256 million for the corresponding period a year ago .",
+        "Cencorp , headquartered in Virkkala , Finland , develops and supplies automation solutions to the electronics and semiconductor industry that enhance productivity ."
+      ],
+      "uncertainty_words": [
+        "Finnish engineering and technology company Metso Oyj said on May 27 , 2008 it completed the acquisition of paper machinery technology from Japanese engineering company Mitsubishi Heavy Industries ( MHI ) for an undisclosed sum .",
+        "The highest growth would be in China , while weakening demand would continue in North America , UPM said .",
+        "`` Those uncertainties cloud the long-term outlook . ''",
+        "Only this time , Nokia , India 's largest MNC , has sought out a topic that could spark off a million approaches ` Creativity in Emerging Markets .",
+        "The current lay-offs are additional to the temporary lay-offs agreed in December 2008 and in May 2009 ."
+      ],
+      "question_marks": [],
+      "exclamation_marks": []
+    }
+  },
+  "recommendations": [
+    {
+      "priority": 1,
+      "confusion_type": "neutral_to_positive",
+      "error_count": 84,
+      "percentage": 33.201581027667984,
+      "recommendation": "Focus training on distinguishing neutral from positive sentiment"
+    },
+    {
+      "priority": 2,
+      "confusion_type": "positive_to_neutral",
+      "error_count": 78,
+      "percentage": 30.8300395256917,
+      "recommendation": "Focus training on distinguishing positive from neutral sentiment"
+    },
+    {
+      "priority": 3,
+      "confusion_type": "neutral_to_negative",
+      "error_count": 38,
+      "percentage": 15.019762845849801,
+      "recommendation": "Focus training on distinguishing neutral from negative sentiment"
+    },
+    {
+      "type": "keywords",
+      "keywords": [
+        "pct",
+        "solutions",
+        "compared",
+        "new",
+        "mln",
+        "line",
+        "increase",
+        "months",
+        "reach",
+        "fortum"
+      ],
+      "recommendation": "Create additional training examples focusing on these problematic terms"
+    }
+  ],
+  "misclassified_examples": [
+    {
+      "text": "Le Lay succeeds Walter G++nter and will be based in Finland .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "Calls to the switchboard and directory services have decreased significantly since our employees now have up-to-date contact information from all their colleagues and customers on their phone and can place the call directly .",
+      "true_label": "neutral",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "The Finnish real estate investment company Interavanti Oyj said on Monday ( 22 September ) that it has agreed to sell its 65 % ownership in the Finnish ticket service company Lippupiste Oy to CTS Eventim AG ( 56,1 % ) and to the managing director of Lippupiste Oy .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "` It is a testament to the quality of our LTE solution and our commitment to the Japanese market ' , he added .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "Finnish Bank of +_land +_landsbanken has issued a profit warning .",
+      "true_label": "negative",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "High winds also toppled three semi-trailers on I-15 north of Barstow .",
+      "true_label": "neutral",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "Asimilar agreement was signed between China Mobile Ltd. ( SEHK : 0941 and NYSE : CHL ) , the largest mobile carrier , and theGPS and social networking service provider , promoting GyPSii service before Beijing 2008 Olympic Games , according to thelatest news .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "Key shareholders of Finnish IT services provider TietoEnator Oyj on Friday rejected a hostile EUR1 .08 billion $ 1.67 billion offer from buyout shop Nordic Capital , giving new life to a possible counter offer from Blackstone Group LP and Norwegian telecom Telenor ASA .",
+      "true_label": "positive",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "A light , bright and pretty addition to your life , it will also keep a few pennies in your bank account .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "Xerox and Stora Enso have teamed up to tailor the iGen3 to the short-run , on-demand packaging market .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "Temporary layoffs in these units have already started .",
+      "true_label": "neutral",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "TietoEnator signed an agreement to acquire Indian research and development ( R&D ) services provider and turnkey software solutions developer Fortuna Technologies Pvt. Ltd. for 21 mln euro ( $ 30.3 mln ) in September 2007 .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "Operating profit totaled EUR 17.7 mn compared to EUR 17.6 mn in the corresponding period in 2007 .",
+      "true_label": "positive",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "Based on the first quarter result , existing order backlog and new order prospects , the company expects that full-year sales will contract by 25 % from 2008 , the gross margin will stay at a healthy level , and the operating profit margin will be lower than in 2008 due to lower sales volume .",
+      "true_label": "negative",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "SOUTHFIELD , Mich. -- Central Corporate Credit Union will again distribute patronage dividends to members by waiving all service fees incurred during the months of July and November 2008 , to the tune of an estimated $ 1 million .",
+      "true_label": "positive",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "Sales came in at 241 mln eur , compared with 211.4 mln , and also beating consensus forecasts of 235 mln eur .",
+      "true_label": "positive",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "According to Swedish authorities , traces of the very toxic osmium tetroxide have been found on the coast of Per+Æmeri , the Northernmost part of the Gulf of Bothnia .",
+      "true_label": "negative",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "The GeoSolutions team further provides an intriguing new technology combining GPS and Mobile-based technologies together with Internet-based social networking .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "Markets had been expecting a poor performance , and the company 's stock was up 6 percent at  x20ac 23.89 US$ 33.84 in early afternoon trading in Helsinki .",
+      "true_label": "positive",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "We are also pleased to welcome the new employees to Tieto . '",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "Cargotec Corporation , Press Release , April 28 , 2008 at 2.00 p.m. Finnish time Cargotec 's MacGREGOR business area providing marine cargo handling and offshore load handling solutions has received significant hatch cover orders for bulk carriers .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "According to Kesko , the company agreed with the city administration about lease of the building in 2006 , its resettlement and construction of a five-star hotel Hilton for 120 rooms .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "Marimekko makes all sorts of colorful little impulse buys `` umbrellas , baby bibs , change purses `` and they 're all for sale , the better to take advantage of shoppers who ca n't commit to furniture but want a piece of the action .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "MANAVIGATOR-September 7 , 2010-Kemira unveils Indian JV with IVRCL Finnish chemicals group Kemira ( HEL : KRA1V ) on Tuesday announced it has inked a deal to form a joint venture in India with local construction firm IVRCL Infrastructure and Projects Ltd ( BOM :530773 ) .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "Finnish engineering and technology company Metso Oyj said on May 27 , 2008 it completed the acquisition of paper machinery technology from Japanese engineering company Mitsubishi Heavy Industries ( MHI ) for an undisclosed sum .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "Affecto has helped SKAT to set up the platform and has previously delivered several Business Intelligence projects for SKAT .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "Thus , SysOpen Digia has , in accordance with Chapter 14 Section 21 of the Finnish Companies Act 29.9.1978 - 734 , obtained title to all the shares of Sentera that are to be redeemed .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "Finnish meat company Atria can no longer promise a sufficient amount of domestic beef to its customers .",
+      "true_label": "negative",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "At 10.58 am , Outokumpu declined 2.74 pct to 24.87 eur , while the OMX Helsinki 25 was 0.55 pct higher at 2,825.14 and the OMX Helsinki added 0.64 pct to 9,386.89 .",
+      "true_label": "neutral",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "In contrast , the company 's net loss for the third quarter of 2009 contracted to EUR 76 million from EUR 256 million for the corresponding period a year ago .",
+      "true_label": "positive",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "Cencorp , headquartered in Virkkala , Finland , develops and supplies automation solutions to the electronics and semiconductor industry that enhance productivity .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "`` BG Crane has been a strong partner for Hiab in Australia for many years .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "All of Raisio 's divisions recorded an operating profit .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "Scanfil has also issued a profit warning .",
+      "true_label": "negative",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "( ADPnews ) - Oct 21 , 2009 - Finland-based IT consultancy Tieto Oyj ( HEL : TIE1V ) said today its net profit plunged to EUR 29.4 million ( USD 43.9 m ) for the first nine months of 2009 from EUR 58.7 million for the same period o",
+      "true_label": "negative",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "As a consequence of the merger the number of administration personnel at the factories will be reduced by six .",
+      "true_label": "neutral",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "The ore body is sufficient to support anticipated production for at least 46 years .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "Loss after taxes amounted to EUR 1.2 mn compared to a loss of 2.6 mn .",
+      "true_label": "positive",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "Cargotec 's share capital after the increase totals EUR 64,299,180 .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "Increase in the number of shares is based on the option rights which were granted to the management of the company under the stock option plan 2006 .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "The members of the management team will contribute to the adjustment measures with temporary salary cut of 5 % .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "The poorest index figure was given to Finnish power company Fortum , 4.5 .",
+      "true_label": "negative",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "The CL51 is designed to measure cloud base height and vertical visibility in all weather conditions , which makes it an ideal instrument for meteorological applications that rely on reliable cloud height detection .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "The company expects its net sales in the first half of 2008 to reach the previous year 's level .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "- So , the sales growth of cars considerably influence on the tires market '' .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "In Sweden , Gallerix accumulated SEK denominated sales were down 1 % and EUR denominated sales were up 11 % .",
+      "true_label": "neutral",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "Airbus has 100 firm orders for the A350 and 89 nonbinding commitments .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "The podcast , sees Harple provide the low-down on GyPSii 's platform , which takes someone 's location and demographic information to produce a contextual index of the world around them .",
+      "true_label": "neutral",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "Demand seems to have hit bottom now , and some signs of improvement can be seen .",
+      "true_label": "positive",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "Jobs will not be transferred from Finland , however .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "Even so , Tulikivi emissions are well below some of the strictest state standards including Washington and Colorado .",
+      "true_label": "neutral",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "With this subscription , Fortum 's ownership in TGK-10 has increased to slightly over 76 % of shares and voting rights .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "The two companies will also partner in further developing Raiso 's cholesterol lowering brand , Benecol .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "Viking Line has also been forced to alter its timetable so that ferries traveling from Stockholm to Helsinki , Finland , only depart at night .",
+      "true_label": "neutral",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "An earn-out payment of up to 4.0 mln euro ( $ 5.3 mln ) can also be paid depending on Intellibis financial performance in 2007 .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "Among other industrial stocks , Metso added 0.53 pct to 40.04 eur , Wartsila B was down 0.77 pct at 47.87 eur and Rautaruukki K was 1.08 pct lower at 37.56 eur .",
+      "true_label": "neutral",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "The agreement will provide The Switch with double the converter capacity , whilst opening up further manufacturing locations in China .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "Consumption is forecast to grow by about 2 % .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "The corresponding increase in the share capital , EUR422 ,754 , has been entered in the Trade Register today .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "Raute posted a net profit of 1.8 mln euro $ 2.6 mln for the third quarter of 2007 , compared to a net loss of 299,000 euro $ 430,000 for the corresponding period of 2006 .",
+      "true_label": "positive",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "After the transaction , Danske Bank becomes an equal player with Nordic bank group Nordea in the Nordic countries .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "`` In the newly formed company YIT Stavo the local contact network , expertise and market know how of Euro Stavokonsult will be combined with YIT 's housing concept , '' said Juha Kostiainen , Yit 's Vice President , Corporate Communications and Business Development .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "Nokian Tyres ' tyres are considered genuine winter tyres in Russia .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "The service is intended to allow the people of thirteen Mediterranean countries to reach the Baltic more rapidly , with a single carrier .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "`` Our customers now have the chance to make bookings for all the services they want at one location , '' said Mikko Tuomainen , in-charge of Finnair 's Internet ( sales ) .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "Applying for summer work is seen as laborious and stressful .",
+      "true_label": "negative",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "Neomarkka has played a leading role in a group that aims to restart the production of specialty cellulose fiber in Valkeakoski .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "Return on investment was 16.6 % compared to 15.8 % in 2004 .",
+      "true_label": "positive",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "Tip of the week Panfish like bluegills are great fun to catch , especially for children new to fishing .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "The terms of the financing were approved by the Annual General Meeting of the Company held on June 30 , 2010 .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "The company is also featured in the Ethibel Pioneer Investment Register and included in Innovest 's Global 100 list of the world 's most sustainable corporations .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "Pioneer Library System was one of 127 libraries , municipalities , arts , culture and higher education and science organizations to have been awarded grants to participate in The Big Read , the largest federal reading program in U.S. history .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "The company admits that 36 months is a relatively short time when operating in Russia .",
+      "true_label": "neutral",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "The core of Solidium 's investment strategy is proper , value enhancing asset management of the current holdings .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "Rautakesko 's business operations in Norway and Russia , acquired in July 2005 , are included in the figures of the comparable period , impacting sales growth starting from August .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "To choose BasWare as the tools for our Financial Service seemed like a natural continuation of our cooperation '' , says Tommi Leskinen , Financial Applications Manager , Neste Oil Corporation .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "In addition to the Indian market , the new plant will serve Salcomp 's customers globally , the company said .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "26 January 2011 - Finnish software solutions provider Basware ( HEL : BAS1V ) said yesterday it adjusted its strategy and goals for the next four years with focus on international growth mainly via acquisitions .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "Among paper issues , Stora Enso R was little changed -- up 0.08 pct at 12.03 eur , UPM-Kymmene was 0.48 pct higher at 18.77 eur and M-real B added 0.50 pct to 3.99 eur .",
+      "true_label": "neutral",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "`` The sale of the oxygen measurement business strengthens our goal to focus on our chosen market segments .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "The company said that it will supply the WCDMA 3G-HSPA radio network , including the modular , high capacity Nokia Flexi WCDMA base station in East Java , Bali , Sumatra and Batam .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "The earnings in the comparative period included a capital gain of EUR 8mn from the sale of OMX shares .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "In the Asia-Pacific region , Visa Wave is available in Malaysia , Taiwan and South Korea and will be expanded to Japan and Southeast Asia this year , Jung added .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "Consumer products manufacturer Fiskars Corp. will open a distribution and warehouse center in Southaven , creating 100 jobs .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "Its total annual revenue comes up to about 160 mln zloty ( $ 56.9 mln-42 .3 mln euro ) .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "Self-service and automation are in a bigger role now and Fujitsu 's global resources will be exploited effectively .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "ASSA ABLOY Kaupthing Bank gave a ` neutral ' recommendation and a share price target of 174 crowns $ 24.7 - 19 euro on Swedish lock maker Assa Abloy AB .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "Stockmann and Swedish sector company AB Lindex entered into an agreement on September 30 , 2007 , whereby Stockmann , or a wholly-owned subsidiary of it , will make a public tender offer for all of Lindex 's issued shares .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "Ruukki is restructuring commercial and industrial construction operations in pursuit of permanent improvements whilst adjusting operations to market conditions .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "Finnish forest machinery manufacturer Ponsse has issued a profit warning .",
+      "true_label": "negative",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "Pretax profit totalled EUR 2.0 mn , compared to a loss of EUR 159.2 mn in the fourth quarter of 2008 .",
+      "true_label": "positive",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "With the second phase of the new Innova building , Tecnopolis presence in Jyvaskyla will increase to a total of approximately 62,000 floor square meters .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "The highest growth would be in China , while weakening demand would continue in North America , UPM said .",
+      "true_label": "neutral",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "When this investment is in place , Atria plans to expand into the Moscow market .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "Cramo 's manager Jarmo Laasanen said hiring of equipment and machinery in Lithuania differs from the other Baltic countries in that in Lithuania still many public structures such as roads , bridges , airports and shops are being built .",
+      "true_label": "neutral",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "Following the increase , Huhtamaki Oyj 's registered share capital is EUR 358,706,290.00 and the number of shares outstanding is 105,501,850 .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "Operating profit was EUR 9.8 mn , compared to a loss of EUR 12.7 mn in the corresponding period in 2009 .",
+      "true_label": "positive",
+      "predicted_label": "negative"
+    },
+    {
+      "text": "The repo rate will gradually reach 2 % at the end of 2010 , according to Nordea 's Economic Outlook .",
+      "true_label": "neutral",
+      "predicted_label": "positive"
+    },
+    {
+      "text": "Cargotec Corporation , Press Release , August 26 , 2008 at 10 a.m. Finnish time Cargotec 's MacGREGOR business area providing marine cargo handling and offshore load handling solutions has received significant offshore crane retrofit order .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    },
+    {
+      "text": "The GeoSolutions technology will leverage Benefon 's GPS solutions by providing Location Based Search Technology , a Communities Platform , location relevant multimedia content and a new and powerful commercial model .",
+      "true_label": "positive",
+      "predicted_label": "neutral"
+    }
+  ]
+}
