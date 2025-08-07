@@ -1,0 +1,30 @@
+
+UNIVERSAL FINE-TUNING & PRUNING ANALYSIS SUMMARY
+===============================================
+
+🎯 PERFORMANCE OVERVIEW (ONNX):
+• Overall Accuracy: 79.1%
+• Error Rate: 20.9%
+• Average Confidence: 0.731
+• Model: tinybert-financial-classifier
+
+📊 KEY METRICS FOR FINE-TUNING:
+• Most Problematic Classes: ['positive', 'negative']
+• Low Confidence Samples: 195 (16.1%)
+• High-Priority Samples: 253 errors + 195 low-conf
+
+🔧 RECOMMENDED FINE-TUNING STRATEGY:
+• Learning Rate: 5e-5 to 1e-4 (moderate fine-tuning)
+• Focus Areas: positive, negative
+• Target Keywords: pct, solutions, compared, new, increase
+
+✂️ RECOMMENDED PRUNING STRATEGY:
+• Conservative pruning (10-20%) - low confidence samples
+• Confidence Threshold: 0.9
+• Expected Coverage: 0.0%
+
+📋 NEXT STEPS:
+1. Use misclassified samples for hard negative mining
+2. Focus fine-tuning on positive, negative classes
+3. Apply confidence-based pruning with 0.9 threshold
+4. Monitor performance on high-entropy samples
