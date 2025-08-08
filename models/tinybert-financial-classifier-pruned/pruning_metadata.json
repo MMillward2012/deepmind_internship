@@ -10,39 +10,39 @@
     "original_parameters": 14351187,
     "pruned_parameters": 13351037,
     "sparsity_achieved": 0.06969109941916307,
-    "accuracy_before": 0.82,
-    "accuracy_after": 0.85,
-    "accuracy_drop": -0.030000000000000027,
-    "inference_speedup": 1.0196492086050113,
+    "accuracy_before": 0.83,
+    "accuracy_after": 0.84,
+    "accuracy_drop": -0.010000000000000009,
+    "inference_speedup": 1.0726848689701725,
     "memory_reduction": 0.05575287953533046,
     "confidence_maintained": true
   },
   "pruning_history": [
     {
       "sparsity": 0.023230412926819266,
-      "accuracy": 0.82,
-      "speedup": 1.0631154818577369
+      "accuracy": 0.85,
+      "speedup": 0.9952640966062681
     },
     {
       "sparsity": 0.046460686492343806,
-      "accuracy": 0.84,
-      "speedup": 0.9867061859726631
+      "accuracy": 0.85,
+      "speedup": 0.9978108521741501
     },
     {
       "sparsity": 0.06969109941916307,
-      "accuracy": 0.85,
-      "speedup": 1.0174834368042462
+      "accuracy": 0.84,
+      "speedup": 1.1480266209300352
     },
     {
       "sparsity": 0.09292137298468761,
-      "accuracy": 0.84,
-      "speedup": 1.0311653033963732
+      "accuracy": 0.85,
+      "speedup": 1.0143411085661118
     },
     {
       "sparsity": 0.06969109941916307,
-      "accuracy": 0.85,
-      "speedup": 1.0196492086050113
+      "accuracy": 0.84,
+      "speedup": 1.0726848689701725
     }
   ],
-  "export_timestamp": "2025-08-08 11:14:31"
+  "export_timestamp": "2025-08-08 13:39:40"
 }
