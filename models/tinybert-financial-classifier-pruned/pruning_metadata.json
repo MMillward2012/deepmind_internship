@@ -1,0 +1,48 @@
+{
+  "model_info": {
+    "architecture": "pruned-bertforsequenceclassification",
+    "original_parameters": 14351187,
+    "pruned_parameters": 13351037,
+    "model_type": "pytorch",
+    "pruned": true
+  },
+  "pruning_results": {
+    "original_parameters": 14351187,
+    "pruned_parameters": 13351037,
+    "sparsity_achieved": 0.06969109941916307,
+    "accuracy_before": 0.82,
+    "accuracy_after": 0.85,
+    "accuracy_drop": -0.030000000000000027,
+    "inference_speedup": 1.0196492086050113,
+    "memory_reduction": 0.05575287953533046,
+    "confidence_maintained": true
+  },
+  "pruning_history": [
+    {
+      "sparsity": 0.023230412926819266,
+      "accuracy": 0.82,
+      "speedup": 1.0631154818577369
+    },
+    {
+      "sparsity": 0.046460686492343806,
+      "accuracy": 0.84,
+      "speedup": 0.9867061859726631
+    },
+    {
+      "sparsity": 0.06969109941916307,
+      "accuracy": 0.85,
+      "speedup": 1.0174834368042462
+    },
+    {
+      "sparsity": 0.09292137298468761,
+      "accuracy": 0.84,
+      "speedup": 1.0311653033963732
+    },
+    {
+      "sparsity": 0.06969109941916307,
+      "accuracy": 0.85,
+      "speedup": 1.0196492086050113
+    }
+  ],
+  "export_timestamp": "2025-08-08 11:14:31"
+}
