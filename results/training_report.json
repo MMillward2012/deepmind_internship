@@ -1,0 +1,58 @@
+{
+  "training_timestamp": "2025-08-08T16:56:36.374360",
+  "models_trained": [
+    "tinybert-financial-classifier"
+  ],
+  "training_config": {
+    "batch_size": 2,
+    "learning_rate": 2e-05,
+    "num_epochs": 1,
+    "warmup_steps": 100,
+    "weight_decay": 0.01,
+    "gradient_accumulation_steps": 8,
+    "max_grad_norm": 1.0,
+    "evaluation_strategy": "epoch",
+    "save_strategy": "epoch",
+    "logging_steps": 50,
+    "early_stopping": {
+      "enabled": true,
+      "patience": 2,
+      "min_delta": 0.001
+    },
+    "optimizer": "adamw",
+    "scheduler": "linear",
+    "max_length": 128
+  },
+  "results": {
+    "tinybert-financial-classifier": {
+      "train_loss": 0.8801932422232716,
+      "eval_loss": 0.7399495840072632,
+      "eval_accuracy": 0.7628865979381443,
+      "train_runtime": 255.8317,
+      "samples_per_second": 17.046
+    }
+  },
+  "model_details": {
+    "tinybert-financial-classifier": {
+      "model_path": "../models/tinybert-financial-classifier",
+      "base_model": "huawei-noah/TinyBERT_General_4L_312D",
+      "labels": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "label_mapping": {
+        "label2id": {
+          "negative": 0,
+          "neutral": 1,
+          "positive": 2
+        },
+        "id2label": {
+          "0": "negative",
+          "1": "neutral",
+          "2": "positive"
+        }
+      }
+    }
+  }
+}

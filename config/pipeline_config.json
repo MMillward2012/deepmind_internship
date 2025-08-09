@@ -1,0 +1,196 @@
+{
+  "pipeline": {
+    "name": "financial_sentiment_pipeline",
+    "version": "1.0.0",
+    "description": "Generalized pipeline for financial sentiment classification",
+    "random_seed": 42
+  },
+  
+  "data": {
+    "raw_data_path": "data/FinancialPhraseBank/all-data.csv",
+    "processed_data_dir": "data/processed",
+    "train_test_split": 0.25,
+    "validation_split": 0.1,
+    "max_sequence_length": 128,
+    "label_columns": ["label", "sentence"],
+    "text_preprocessing": {
+      "strip_quotes": true,
+      "lowercase": false,
+      "remove_special_chars": false
+    }
+  },
+  
+  "models": {
+    "base_models": [
+      {
+        "name": "tinybert-financial-classifier",
+        "model_id": "huawei-noah/TinyBERT_General_4L_312D",
+        "tokenizer_id": "huawei-noah/TinyBERT_General_4L_312D",
+        "num_labels": 3,
+        "enabled": true
+      },
+      {
+        "name": "finbert-tone",
+        "model_id": "ProsusAI/finbert",
+        "tokenizer_id": "ProsusAI/finbert",
+        "num_labels": 3,
+        "enabled": true
+      },
+      {
+        "name": "distilbert-base",
+        "model_id": "distilbert-base-uncased",
+        "tokenizer_id": "distilbert-base-uncased",
+        "num_labels": 3,
+        "enabled": false
+      }
+    ],
+    "output_dir": "models",
+    "save_pretrained": true,
+    "save_tokenizer": true
+  },
+  
+  "training": {
+    "batch_size": 16,
+    "learning_rate": 2e-5,
+    "num_epochs": 3,
+    "warmup_steps": 100,
+    "weight_decay": 0.01,
+    "gradient_accumulation_steps": 1,
+    "max_grad_norm": 1.0,
+    "evaluation_strategy": "epoch",
+    "save_strategy": "epoch",
+    "logging_steps": 50,
+    "early_stopping": {
+      "enabled": true,
+      "patience": 2,
+      "min_delta": 0.001
+    },
+    "optimizer": "adamw",
+    "scheduler": "linear"
+  },
+  
+  "fine_tuning": {
+    "enabled": true,
+    "base_model_path": "models/tinybert-financial-classifier",
+    "learning_rate": 1e-5,
+    "num_epochs": 5,
+    "batch_size": 8,
+    "freeze_base_layers": false,
+    "layer_wise_lr_decay": 0.9,
+    "techniques": {
+      "quantization": {
+        "enabled": true,
+        "dtype": "qint8",
+        "qconfig": "fbgemm"
+      },
+      "knowledge_distillation": {
+        "enabled": true,
+        "teacher_model": "models/finbert-tone-financial-sentiment",
+        "temperature": 3.0,
+        "alpha": 0.7,
+        "student_size_ratio": 0.4
+      },
+      "pruning": {
+        "enabled": false,
+        "sparsity": 0.5,
+        "structured": true
+      }
+    }
+  },
+  
+  "onnx_conversion": {
+    "enabled": true,
+    "opset_version": 11,
+    "optimization_level": "all",
+    "providers": ["CPUExecutionProvider"],
+    "dynamic_axes": {
+      "input_ids": {"0": "batch_size"},
+      "attention_mask": {"0": "batch_size"},
+      "logits": {"0": "batch_size"}
+    },
+    "validate_conversion": true
+  },
+  
+  "benchmarking": {
+    "fast_mode": true,
+    "include_accuracy": true,
+    "target_models": null,
+    "iterations": {
+      "fast": 15,
+      "thorough": 30
+    },
+    "warmup_iterations": {
+      "fast": 5,
+      "thorough": 10
+    },
+    "batch_sizes": {
+      "fast": [1, 8],
+      "thorough": [1, 4, 8, 16]
+    },
+    "accuracy_sample_size": {
+      "fast": 300,
+      "thorough": 500
+    },
+    "providers": ["CPUExecutionProvider"],
+    "output_format": ["csv", "json"],
+    "results_dir": "results"
+  },
+  
+  "explainability": {
+    "enabled": true,
+    "methods": ["attention", "gradients", "lime"],
+    "sample_size": 100,
+    "visualizations": {
+      "attention_heatmaps": true,
+      "word_importance": true,
+      "feature_attribution": true
+    },
+    "export_formats": ["html", "png"],
+    "output_dir": "results/explainability"
+  },
+  
+  "deployment": {
+    "target_latency_ms": 5.0,
+    "min_accuracy_retention": 0.90,
+    "max_model_size_mb": 20.0,
+    "export_formats": ["pytorch", "onnx"],
+    "optimization_pipeline": {
+      "apply_quantization": true,
+      "apply_knowledge_distillation": true,
+      "apply_pruning": false
+    },
+    "production_config": {
+      "batch_size": 1,
+      "threading": {
+        "inter_op_threads": 1,
+        "intra_op_threads": 0
+      }
+    }
+  },
+  
+  "hardware": {
+    "device": "auto",
+    "cuda_visible_devices": null,
+    "mixed_precision": false,
+    "dataloader_workers": 4,
+    "pin_memory": true
+  },
+  
+  "logging": {
+    "level": "INFO",
+    "log_to_file": true,
+    "log_dir": "logs",
+    "log_format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  },
+  
+  "paths": {
+    "root_dir": ".",
+    "data_dir": "data",
+    "models_dir": "models",
+    "results_dir": "results",
+    "logs_dir": "logs",
+    "config_dir": "config",
+    "notebooks_dir": "notebooks",
+    "src_dir": "src"
+  }
+}
