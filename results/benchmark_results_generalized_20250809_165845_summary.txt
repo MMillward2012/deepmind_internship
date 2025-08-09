@@ -1,0 +1,32 @@
+Performance Benchmarking Summary Report
+==================================================
+
+Generated: 2025-08-09 16:58:45
+Configuration: {'fast_mode': True, 'iterations': 15, 'warmup_iterations': 5, 'batch_sizes': [1, 8], 'include_accuracy': True, 'accuracy_sample_size': 300}
+
+Best Performers:
+--------------------
+Lowest Latency: 5.09ms
+  Model: tinybert-financial-classifier (onnx-CPUExecutionProvider)
+  Batch: 1
+
+Highest Throughput: 290.6 samples/sec
+  Model: tinybert-financial-classifier-fine-tuned (onnx-CPUExecutionProvider)
+  Batch: 8
+
+Highest Accuracy: 0.7500
+  Model: all-MiniLM-L6-v2-financial-sentiment (pytorch-PyTorch)
+  Batch: 1
+
+Performance by Model Type:
+------------------------------
+ONNX:
+  Avg Latency: 353.48ms
+  Avg Throughput: 85.2 samples/sec
+  Avg Accuracy: 0.6880
+
+PYTORCH:
+  Avg Latency: 124.22ms
+  Avg Throughput: 92.3 samples/sec
+  Avg Accuracy: 0.6880
+

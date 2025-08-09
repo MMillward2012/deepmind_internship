@@ -100,6 +100,7 @@
   
   "onnx_conversion": {
     "enabled": true,
+    "fast_mode": true,
     "opset_version": 11,
     "optimization_level": "all",
     "providers": ["CPUExecutionProvider"],
@@ -114,7 +115,16 @@
   "benchmarking": {
     "fast_mode": true,
     "include_accuracy": true,
-    "target_models": null,
+    "target_models": [
+      "finbert-tone-financial-sentiment",
+      "tinybert-financial-classifier",
+      "tinybert-financial-classifier-fine-tuned",
+      "distilbert-financial-sentiment",
+      "all-MiniLM-L6-v2-financial-sentiment"
+    ],
+    "exclude_models": [
+      "SmolLM2-360M-Instruct-financial-sentiment"
+    ],
     "iterations": {
       "fast": 15,
       "thorough": 30
@@ -124,12 +134,12 @@
       "thorough": 10
     },
     "batch_sizes": {
-      "fast": [1, 8],
-      "thorough": [1, 4, 8, 16]
+      "fast": [1, 4],
+      "thorough": [1, 4, 8]
     },
     "accuracy_sample_size": {
-      "fast": 300,
-      "thorough": 500
+      "fast": 500,
+      "thorough": 1000
     },
     "providers": ["CPUExecutionProvider"],
     "output_format": ["csv", "json"],

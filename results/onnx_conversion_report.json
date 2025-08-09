@@ -1,0 +1,242 @@
+{
+  "conversion_timestamp": "2025-08-09T15:48:04.366634",
+  "models_processed": 8,
+  "successful_conversions": 8,
+  "failed_conversions": 0,
+  "onnx_config": {
+    "enabled": true,
+    "fast_mode": true,
+    "opset_version": 11,
+    "optimization_level": "all",
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "dynamic_axes": {
+      "input_ids": {
+        "0": "batch_size"
+      },
+      "attention_mask": {
+        "0": "batch_size"
+      },
+      "logits": {
+        "0": "batch_size"
+      }
+    },
+    "validate_conversion": true
+  },
+  "conversion_results": {
+    "tinybert-financial-classifier-fine-tuned": {
+      "conversion_successful": true,
+      "onnx_path": "models/tinybert-financial-classifier-fine-tuned/onnx/model.onnx",
+      "optimized_path": null,
+      "validation": {
+        "valid": true,
+        "skipped": true
+      },
+      "file_sizes": {
+        "original_mb": 54.75,
+        "onnx_mb": 54.85,
+        "optimized_mb": null,
+        "compression_ratio": 1.0
+      },
+      "model_config": {
+        "opset_version": 11,
+        "optimization_level": "existing",
+        "dynamic_axes": [
+          "input_ids",
+          "attention_mask",
+          "logits"
+        ]
+      },
+      "skipped_existing": true,
+      "existing_file_name": "model.onnx"
+    },
+    "all-MiniLM-L6-v2-financial-sentiment": {
+      "conversion_successful": true,
+      "onnx_path": "models/all-MiniLM-L6-v2-financial-sentiment/onnx/model.onnx",
+      "optimized_path": null,
+      "validation": {
+        "valid": true,
+        "skipped": true
+      },
+      "file_sizes": {
+        "original_mb": 86.66,
+        "onnx_mb": 86.78,
+        "optimized_mb": null,
+        "compression_ratio": 1.0
+      },
+      "model_config": {
+        "opset_version": 11,
+        "optimization_level": "existing",
+        "dynamic_axes": [
+          "input_ids",
+          "attention_mask",
+          "logits"
+        ]
+      },
+      "skipped_existing": true,
+      "existing_file_name": "model.onnx"
+    },
+    "distilbert-financial-sentiment": {
+      "conversion_successful": true,
+      "onnx_path": "models/distilbert-financial-sentiment/onnx/model.onnx",
+      "optimized_path": null,
+      "validation": {
+        "valid": true,
+        "skipped": true
+      },
+      "file_sizes": {
+        "original_mb": 255.43,
+        "onnx_mb": 255.52,
+        "optimized_mb": null,
+        "compression_ratio": 1.0
+      },
+      "model_config": {
+        "opset_version": 11,
+        "optimization_level": "existing",
+        "dynamic_axes": [
+          "input_ids",
+          "attention_mask",
+          "logits"
+        ]
+      },
+      "skipped_existing": true,
+      "existing_file_name": "model.onnx"
+    },
+    "finbert-tone-financial-sentiment": {
+      "conversion_successful": true,
+      "onnx_path": "models/finbert-tone-financial-sentiment/onnx/model.onnx",
+      "optimized_path": null,
+      "validation": {
+        "valid": true,
+        "skipped": true
+      },
+      "file_sizes": {
+        "original_mb": 418.7,
+        "onnx_mb": 418.95,
+        "optimized_mb": null,
+        "compression_ratio": 1.0
+      },
+      "model_config": {
+        "opset_version": 11,
+        "optimization_level": "existing",
+        "dynamic_axes": [
+          "input_ids",
+          "attention_mask",
+          "logits"
+        ]
+      },
+      "skipped_existing": true,
+      "existing_file_name": "model.onnx"
+    },
+    "SmolLM2-360M-Instruct-financial-sentiment": {
+      "conversion_successful": true,
+      "onnx_path": "models/SmolLM2-360M-Instruct-financial-sentiment/onnx/model.onnx",
+      "optimized_path": null,
+      "validation": {
+        "valid": true,
+        "skipped": true
+      },
+      "file_sizes": {
+        "original_mb": 1380.28,
+        "onnx_mb": 1381.59,
+        "optimized_mb": null,
+        "compression_ratio": 1.0
+      },
+      "model_config": {
+        "opset_version": 11,
+        "optimization_level": "existing",
+        "dynamic_axes": [
+          "input_ids",
+          "attention_mask",
+          "logits"
+        ]
+      },
+      "skipped_existing": true,
+      "existing_file_name": "model.onnx"
+    },
+    "tinybert-financial-classifier": {
+      "conversion_successful": true,
+      "onnx_path": "models/tinybert-financial-classifier/onnx/model.onnx",
+      "optimized_path": null,
+      "validation": {
+        "valid": true,
+        "skipped": true
+      },
+      "file_sizes": {
+        "original_mb": 54.75,
+        "onnx_mb": 54.85,
+        "optimized_mb": null,
+        "compression_ratio": 1.0
+      },
+      "model_config": {
+        "opset_version": 11,
+        "optimization_level": "existing",
+        "dynamic_axes": [
+          "input_ids",
+          "attention_mask",
+          "logits"
+        ]
+      },
+      "skipped_existing": true,
+      "existing_file_name": "model.onnx"
+    },
+    "tinybert-financial-classifier-pruned": {
+      "conversion_successful": true,
+      "onnx_path": "models/tinybert-financial-classifier-pruned/onnx/model.onnx",
+      "optimized_path": null,
+      "validation": {
+        "valid": true,
+        "skipped": true
+      },
+      "file_sizes": {
+        "original_mb": 54.75,
+        "onnx_mb": 54.85,
+        "optimized_mb": null,
+        "compression_ratio": 1.0
+      },
+      "model_config": {
+        "opset_version": 11,
+        "optimization_level": "existing",
+        "dynamic_axes": [
+          "input_ids",
+          "attention_mask",
+          "logits"
+        ]
+      },
+      "skipped_existing": true,
+      "existing_file_name": "model.onnx"
+    },
+    "mobilebert-uncased-financial-sentiment": {
+      "conversion_successful": true,
+      "onnx_path": "models/mobilebert-uncased-financial-sentiment/onnx/model.onnx",
+      "optimized_path": null,
+      "validation": {
+        "valid": true,
+        "skipped": true
+      },
+      "file_sizes": {
+        "original_mb": 93.91,
+        "onnx_mb": 94.52,
+        "optimized_mb": null,
+        "compression_ratio": 0.99
+      },
+      "model_config": {
+        "opset_version": 11,
+        "optimization_level": "existing",
+        "dynamic_axes": [
+          "input_ids",
+          "attention_mask",
+          "logits"
+        ]
+      },
+      "skipped_existing": true,
+      "existing_file_name": "model.onnx"
+    }
+  },
+  "summary_statistics": {
+    "total_original_size_mb": 2399.2299999999996,
+    "total_onnx_size_mb": 2401.9099999999994,
+    "average_compression_ratio": 0.99875
+  }
+}
