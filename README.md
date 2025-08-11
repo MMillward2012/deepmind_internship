@@ -1,12 +1,22 @@
-# <p align="center">
-	<img width="300" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/DeepMind_logo.png" alt="DeepMind Logo" style="margin: 0 30px 0 0;">
-	<img width="300" src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face Logo">
-</p>
+
+
+<div align="center">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/DeepMind_logo.png" alt="DeepMind Logo" width="220" style="margin: 0 40px 0 0;"/>
+	<img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face Logo" width="220"/>
+</div>
 
 # DeepMind Financial NLP Explainability & Optimization Suite
 
 A research-grade, modular pipeline for **explainability-driven fine-tuning, benchmarking, and deployment** of transformer models for financial sentiment analysis and classification.  
 Built with [DeepMind](https://deepmind.com/) best practices and leveraging [Hugging Face Transformers](https://huggingface.co/transformers/).
+
+---
+
+## Team & Contributors
+
+- Matthew Millward (DeepMind)
+- Frank
+- Other Interns
 
 ---
 
