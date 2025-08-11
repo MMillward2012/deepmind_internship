@@ -119,11 +119,13 @@
       "finbert-tone-financial-sentiment",
       "tinybert-financial-classifier",
       "tinybert-financial-classifier-fine-tuned",
-      "distilbert-financial-sentiment",
-      "all-MiniLM-L6-v2-financial-sentiment"
+      "explainability_fine_tuned",
+      "tinybert-financial-classifier-explainability-fine-tuned"
     ],
     "exclude_models": [
-      "SmolLM2-360M-Instruct-financial-sentiment"
+      "SmolLM2-360M-Instruct-financial-sentiment",
+      "distilbert-financial-sentiment",
+      "all-MiniLM-L6-v2-financial-sentiment"
     ],
     "iterations": {
       "fast": 15,
