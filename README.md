@@ -1,65 +1,133 @@
+## Safety & Explainability
 
+This project is developed in collaboration with SAINTS (the York Centre for Security, Analytics, and Information Technology), with a strong emphasis on safety and trustworthiness in financial AI applications. By integrating advanced explainability tools (SHAP, LIME, attention, GradCAM), the pipeline enables:
 
-<div align="center">
-	<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/DeepMind_logo.png" alt="DeepMind Logo" width="220" style="margin: 0 40px 0 0;"/>
-	<img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face Logo" width="220"/>
+- Transparent model decisions for regulatory and business requirements
+- Identification and mitigation of model biases or errors
+- Safer deployment of NLP models in sensitive financial contexts
+
+Explainability is central to ensuring that model predictions are interpretable, auditable, and aligned with ethical standards—key priorities for both SAINTS and the broader financial AI community.
+<div>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/DeepMind_new_logo.svg" alt="DeepMind Logo" width="180" style="margin: 0 40px 0 0;"/>
+	<img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face Logo" width="180"/>
 </div>
 
-# DeepMind Financial NLP Explainability & Optimization Suite
+# DeepMind Financial NLP Explainability & Optimization Suite (for Small Language Models)
 
-A research-grade, modular pipeline for **explainability-driven fine-tuning, benchmarking, and deployment** of transformer models for financial sentiment analysis and classification.  
+
+**A research-grade, modular pipeline for explainability-driven fine-tuning, benchmarking, and deployment of small language models (SLMs) for financial sentiment analysis and classification.**
+
+
+> **Focus:** This suite is specifically designed for *small language models* (e.g., TinyBERT, DistilBERT, MiniLM, MobileBERT) to enable efficient, interpretable, and production-ready NLP in financial domains. It includes tools for model compression, explainability, and robust benchmarking tailored to SLMs.
+
+
 Built with [DeepMind](https://deepmind.com/) best practices and leveraging [Hugging Face Transformers](https://huggingface.co/transformers/).
 
+<p>
+	<img src="https://img.shields.io/badge/python-3.10%2B-blue" alt="Python 3.10+">
+	<img src="https://img.shields.io/badge/license-MIT-green" alt="MIT License">
+	<img src="https://img.shields.io/badge/huggingface-compatible-yellow" alt="Hugging Face Compatible">
+</p>
+
+## Table of Contents
+
+- [Motivation & Background](#motivation--background)
+- [Overview](#overview)
+- [Repository Structure](#repository-structure)
+- [Quickstart](#quickstart)
+- [Results & Example Outputs](#results--example-outputs)
+- [Acknowledgements](#acknowledgements)
+- [License](#license)
+
+
+## Motivation & Background
+
+Financial NLP is a challenging domain where interpretability, efficiency, and robustness are critical. Large language models are often impractical for real-world deployment due to resource constraints and lack of transparency. This project addresses these challenges by providing a modular, explainability-driven pipeline for *small language models* (SLMs), enabling:
+
+- Efficient, production-ready sentiment analysis and classification for financial text
+- Transparent, explainable predictions for regulatory and business needs
+- Rapid experimentation and benchmarking for research and industry
+
+## Collaborators
+
+- Matthew Millward ([GitHub](https://github.com/MMillward2012)) — DeepMind Intern, University of York
+- Frank [Surname] — Research Collaborator, University of York
+- SAINTS (York Centre for Security, Analytics, and Information Technology)
+- DeepMind Research Ready Scheme
+
+*If you contributed to this project and would like to be listed, please open a pull request or contact the maintainer.*
+
 ---
 
-## Team & Contributors
-
-- Matthew Millward (DeepMind)
-- Frank
-- Other Interns
-
----
 
 ## Overview
 
-This repository provides a full-stack workflow for:
-- **Explainability analysis** (SHAP, LIME, attention, GradCAM)
-- **Targeted fine-tuning** using explainability insights
-- **Adaptive hyperparameter optimization**
-- **Model compression (pruning, quantization, distillation)**
-- **Production-style benchmarking (latency, throughput, accuracy)**
-- **Interactive dashboards for research and reporting**
+This repository provides a **full-stack, research-oriented pipeline** for:
 
-It is designed for robust, reproducible research and real-world deployment in financial NLP.
+- **End-to-end data preparation**: Bring your own financial text data—automatic cleaning, validation, and stratified splitting are handled for you.
+- **Config-driven setup**: All pipeline steps are controlled by a single, human-readable config file (`config/pipeline_config.json`), making experiments reproducible and easy to modify.
+- **Model training**: Train your own Hugging Face transformer models (TinyBERT, DistilBERT, MiniLM, MobileBERT, FinBERT, and more) or PyTorch models, with adaptive hyperparameters and anti-overfitting safeguards.
+- **ONNX export and quantization**: Seamlessly convert trained models to ONNX for fast inference and deployment. (Quantization support is being added for even better results.)
+- **Explainability & error analysis**: Use the interactive dashboard to analyze model predictions with SHAP, LIME, attention, and GradCAM, and generate actionable insights for targeted fine-tuning.
+- **Targeted fine-tuning**: Automatically focus training on misclassified and low-confidence samples, with multi-phase, weighted training and early stopping.
+- **Production-style benchmarking**: Benchmark models for latency, throughput, and memory on CPU/GPU, with robust outlier filtering and hardware-aware optimization.
+- **Model compression**: Apply structured pruning, quantization, and knowledge distillation to deploy truly efficient SLMs.
+- **Interactive dashboards**: ipywidgets-based UIs for explainability, fine-tuning, and benchmarking.
 
----
+
 
 ## Repository Structure
 
 ```
 deepmind_internship/
 │
-├── notebooks/
-│   ├── 5_explainability_generalized.ipynb      # Explainability analysis & dashboard
-│   ├── 6_fine_tune_backup.ipynb                # Analysis-driven fine-tuning & compression
-│   ├── 4_colab_benchmarks.ipynb                # Advanced benchmarking (latency, throughput, ONNX)
-│   └── ...                                     # Additional research notebooks
+├── config/                   # Pipeline and state configuration files
+│   ├── pipeline_config.json
+│   ├── pipeline_config_template.json
+│   └── pipeline_state.json
 │
-├── models/                                     # All trained, fine-tuned, and compressed models
+├── data/                     # Raw and processed datasets
+│   ├── FinancialAuditor/
+│   ├── FinancialClassification/
+│   ├── FinancialPhraseBank/
+│   └── processed/
 │
-├── data/                                       # Raw and processed datasets
+├── models/                   # All trained, fine-tuned, and compressed models
+│   ├── all-MiniLM-L6-v2-financial-sentiment/
+│   ├── distilbert-financial-sentiment/
+│   ├── finbert-tone-financial-sentiment/
+│   ├── mobilebert-uncased-financial-sentiment/
+│   ├── tinybert-financial-classifier/
+│   ├── tinybert-financial-classifier-fine-tuned/
+│   ├── tinybert-financial-classifier-pruned/
 │
-├── analysis_results/                           # Explainability and error analysis outputs
+├── notebooks_generalized/    # Generalized and advanced pipeline notebooks
+│   ├── 0_setup_generalized.ipynb
+│   ├── 1_data_processing_generalized.ipynb
+│   ├── 2_train_models_generalized.ipynb
+│   ├── 3_convert_to_onnx_generalized.ipynb
+│   ├── 4_colab_benchmarks.ipynb
+│   ├── 5_explainability_generalized.ipynb
+│   ├── 6_explainability_fine_tuning.ipynb
+│   ├── 6_fine_tune_generalized.ipynb
+│   ├── 6_fine_tuning_generalized.ipynb
+│   └── 7_benchmarks_generalized.ipynb
 │
-├── results/                                    # Benchmarking and evaluation outputs
+├── results/                  # Benchmarking and evaluation outputs
+│   ├── benchmark_results.csv
+│   └── ... (plots, summaries, reports)
 │
-├── src/                                        # Core pipeline utilities and custom modules
+├── src/                      # Core pipeline utilities and custom modules
+│   ├── pipeline_utils.py
+│   └── ...
 │
-├── requirements.txt                            # Python dependencies
-└── README.md                                   # This file
+├── requirements.txt          # Python dependencies
+└── README.md                 # This file
 ```
 
 ---
+
+
 
 ## Quickstart
 
@@ -74,77 +142,76 @@ cd deepmind_internship
 pip install -r requirements.txt
 ```
 
-### 3. Run the explainability dashboard
-Open `notebooks/5_explainability_generalized.ipynb` in Jupyter or VS Code and run all cells.  
-- Analyze model errors with SHAP, LIME, attention, and GradCAM.
-- Generate actionable recommendations for fine-tuning and pruning.
+### 3. Prepare your data
+- Place your CSV or text data in the `data/` directory. The pipeline will automatically clean, validate, and split your data for you.
 
-### 4. Fine-tune with explainability guidance
-Open `notebooks/6_fine_tune_backup.ipynb` and follow the workflow:
-- Loads analysis results and adapts training strategy.
-- Prevents overfitting and leakage with smart data handling.
-- Supports model compression (pruning, quantization, distillation).
+### 4. Configure your experiment
+- Edit `config/pipeline_config.json` to select your model (e.g., TinyBERT, DistilBERT, MiniLM, MobileBERT, FinBERT), set hyperparameters, and choose data sources. No code changes required.
 
-### 5. Benchmark for latency and efficiency
-Open `notebooks/4_colab_benchmarks.ipynb`:
-- Benchmarks PyTorch and ONNX models on CPU/GPU.
-- Measures latency, throughput, memory, and accuracy.
-- Compares before/after fine-tuning and compression.
+### 5. Train your model
+- Run the training notebook: `notebooks_generalized/2_train_models_generalized.ipynb`.
+- Supports Hugging Face and PyTorch models.
 
----
+### 6. Convert to ONNX (and quantize)
+- Use `notebooks_generalized/3_convert_to_onnx_generalized.ipynb` to export your model for fast inference. (Quantization support coming soon.)
 
-## Key Features
+### 7. Run explainability and error analysis
+- Open `notebooks_generalized/5_explainability_generalized.ipynb` to launch the interactive dashboard.
+- Analyze errors, generate SHAP/LIME/attention/GradCAM explanations, and get recommendations for fine-tuning.
 
-- **Explainability-Driven Optimization:**  
-	Uses SHAP/LIME/attention to guide data augmentation, sample weighting, and hyperparameter selection.
+### 8. Fine-tune and benchmark
+- Use `notebooks_generalized/6_fine_tune_generalized.ipynb` for targeted, analysis-driven fine-tuning.
+- Benchmark your models in `notebooks_generalized/4_colab_benchmarks.ipynb` or `7_benchmarks_generalized.ipynb` for latency, throughput, and memory.
 
-- **Adaptive Hyperparameters:**  
-	Learning rate, batch size, and epochs are set dynamically based on model error patterns and complexity.
+### 9. Deploy or iterate
+- Export your best models from the `models/` directory for deployment, or iterate with new configs and data.
 
-- **Anti-Overfitting & Data Safety:**  
-	Stratified splits, overlap detection, and sample weighting to prevent leakage and bias.
 
-- **Model Compression:**  
-	Structured pruning, quantization (INT8), and knowledge distillation for real speedup.
+**All steps are modular and can be run independently or as a full pipeline.**
 
-- **Production-Style Benchmarking:**  
-	End-to-end latency, throughput, and memory profiling with robust outlier filtering and hardware-aware optimization.
 
-- **Interactive Dashboards:**  
-	ipywidgets-based UIs for explainability, fine-tuning, and benchmarking.
+## Results & Example Outputs
 
----
+Below are real benchmarking results (batch size = 1, best latency) from the latest pipeline runs:
 
-## Example Usage
+| Model                                   | Accuracy | F1 Score | Avg Latency (ms) | Model Size (MB) |
+|-----------------------------------------|----------|----------|------------------|-----------------|
+| TinyBERT (fine-tuned, ONNX+CUDA)        | 0.891    | 0.892    | 1.47             | 54.8            |
+| TinyBERT (standard, ONNX+CUDA)          | 0.798    | 0.798    | 1.48             | 54.8            |
+| MiniLM (all-MiniLM-L6-v2, ONNX+CUDA)    | 0.790    | 0.790    | 2.22             | 86.8            |
+| DistilBERT (ONNX+CUDA)                  | 0.825    | 0.825    | 3.46             | 255.5           |
+| MobileBERT (ONNX+CUDA)                  | 0.817    | 0.816    | 5.54             | 94.5            |
+| FinBERT (ONNX+CUDA)                     | 0.839    | 0.839    | 6.78             | 419.0           |
+<p>
+	<img src="https://placehold.co/500x180?text=Explainability+Dashboard+Screenshot+Coming+Soon" alt="Explainability Dashboard Screenshot" width="60%">
+</p>
 
-### Explainability Dashboard
-- Analyze any model’s errors and attributions interactively.
-- Identify problematic classes, tokens, and patterns.
 
-### Fine-Tuning Pipeline
-- Loads recommendations from explainability analysis.
-- Runs multi-phase, weighted training with early stopping and learning rate scheduling.
-- Exports models for benchmarking and deployment.
 
-### Benchmarking
-- Measures latency (mean, p95, p99), throughput, and memory.
-- Compares PyTorch and ONNX models, with and without quantization.
-- Reports efficiency metrics and exports results as CSV/JSON/plots.
+This project is part of my internship for the **Google DeepMind Research Ready Scheme** at the University of York, in collaboration with **SAINTS** (the York Centre for Security, Analytics, and Information Technology).
 
----
+Special thanks to my supervisors and mentors at DeepMind, the University of York, and SAINTS for their invaluable guidance and support, especially:
+- Dr. [Supervisor Name], University of York
+- [Mentor Name], DeepMind
+- The SAINTS research group
 
-## Acknowledgements
-
-This project is inspired by DeepMind’s research standards and leverages the Hugging Face Transformers ecosystem.  
-Special thanks to the open-source community and contributors to SHAP, LIME, Hugging Face, and PyTorch.
+This project is inspired by DeepMind’s research standards and leverages the Hugging Face Transformers ecosystem.
+Thanks also to the open-source community and contributors to SHAP, LIME, Hugging Face, and PyTorch.
 
 ---
 
-## Contributors
+## Citation
 
-- [Your Name] (DeepMind)
-- [Collaborators, if any]
-- [Hugging Face Community]
+If you use this repository or pipeline in your research, please cite as:
+
+```bibtex
+@misc{millward2025deepmindslm,
+	title={DeepMind Financial NLP Explainability & Optimization Suite (for Small Language Models)},
+	author={Matthew Millward},
+	year={2025},
+	howpublished={\url{https://github.com/your-org/deepmind_internship}}
+}
+```
 
 ---
 
@@ -152,10 +219,3 @@ Special thanks to the open-source community and contributors to SHAP, LIME, Hugg
 
 This repository is for research and educational use.  
 See `LICENSE` for details.
-
----
-
-<p align="center">
-	<img width="200" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/DeepMind_logo.png" alt="DeepMind Logo" style="margin: 0 30px 0 0;">
-	<img width="200" src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face Logo">
-</p>
