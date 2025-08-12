@@ -1,15 +1,7 @@
-## Safety & Explainability
-
-This project is developed in collaboration with SAINTS (the York Centre for Security, Analytics, and Information Technology), with a strong emphasis on safety and trustworthiness in financial AI applications. By integrating advanced explainability tools (SHAP, LIME, attention, GradCAM), the pipeline enables:
-
-- Transparent model decisions for regulatory and business requirements
-- Identification and mitigation of model biases or errors
-- Safer deployment of NLP models in sensitive financial contexts
-
-Explainability is central to ensuring that model predictions are interpretable, auditable, and aligned with ethical standards—key priorities for both SAINTS and the broader financial AI community.
 <div>
 	<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/DeepMind_new_logo.svg" alt="DeepMind Logo" width="180" style="margin: 0 40px 0 0;"/>
 	<img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face Logo" width="180"/>
+	<img scr="saints logo" alt="Saints logo" width="180"/>
 </div>
 
 # DeepMind Financial NLP Explainability & Optimization Suite (for Small Language Models)
@@ -74,7 +66,15 @@ This repository provides a **full-stack, research-oriented pipeline** for:
 - **Model compression**: Apply structured pruning, quantization, and knowledge distillation to deploy truly efficient SLMs.
 - **Interactive dashboards**: ipywidgets-based UIs for explainability, fine-tuning, and benchmarking.
 
+## Safety & Explainability
 
+This project is developed in collaboration with SAINTS (the York Centre for Security, Analytics, and Information Technology), with a strong emphasis on safety and trustworthiness in financial AI applications. By integrating advanced explainability tools (SHAP, LIME, attention, GradCAM), the pipeline enables:
+
+- Transparent model decisions for regulatory and business requirements
+- Identification and mitigation of model biases or errors
+- Safer deployment of NLP models in sensitive financial contexts
+
+Explainability is central to ensuring that model predictions are interpretable, auditable, and aligned with ethical standards—key priorities for both SAINTS and the broader financial AI community.
 
 ## Repository Structure
 
