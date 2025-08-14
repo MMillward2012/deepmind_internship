@@ -42,7 +42,7 @@ Financial NLP is a challenging domain where interpretability, efficiency, and ro
 
 ## Collaborators
 
-- Matthew Millward ([GitHub](https://github.com/MMillward2012)) — DeepMind Intern, University of York
+- Matthew Millward ([GitHub](https://github.com/MMillward2012)) — DeepMind Intern, Durham University
 - Frank [Surname] — Research Collaborator, University of York
 - SAINTS (York Centre for Security, Analytics, and Information Technology)
 - DeepMind Research Ready Scheme
@@ -133,7 +133,7 @@ deepmind_internship/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-org/deepmind_internship.git
+git clone https://github.com/MMillward2012/deepmind_internship.git
 cd deepmind_internship
 ```
 
@@ -191,12 +191,9 @@ Below are real benchmarking results (batch size = 1, best latency) from the late
 This project is part of my internship for the **Google DeepMind Research Ready Scheme** at the University of York, in collaboration with **SAINTS** (the York Centre for Security, Analytics, and Information Technology).
 
 Special thanks to my supervisors and mentors at DeepMind, the University of York, and SAINTS for their invaluable guidance and support, especially:
-- Dr. [Supervisor Name], University of York
-- [Mentor Name], DeepMind
+- Dr. Frank Soboczenski, University of York
+- Ana Cavalcanti, University of York
 - The SAINTS research group
-
-This project is inspired by DeepMind’s research standards and leverages the Hugging Face Transformers ecosystem.
-Thanks also to the open-source community and contributors to SHAP, LIME, Hugging Face, and PyTorch.
 
 ---
 
