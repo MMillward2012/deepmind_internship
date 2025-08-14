@@ -4,7 +4,7 @@
 	<img scr="saints logo" alt="Saints logo" width="180"/>
 </div>
 
-# DeepMind Financial NLP Explainability & Optimization Suite (for Small Language Models)
+# DeepMind Financial NLP Explainability & Optimisation Suite (for Small Language Models)
 
 
 **A research-grade, modular pipeline for explainability-driven fine-tuning, benchmarking, and deployment of small language models (SLMs) for financial sentiment analysis and classification.**
