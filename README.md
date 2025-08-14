@@ -4,7 +4,7 @@
 	<img scr="saints logo" alt="Saints logo" width="180"/>
 </div>
 
-# DeepMind Financial NLP Explainability & Optimization Suite (for Small Language Models)
+# DeepMind Financial NLP Explainability & Optimisation Suite (for Small Language Models)
 
 
 **A research-grade, modular pipeline for explainability-driven fine-tuning, benchmarking, and deployment of small language models (SLMs) for financial sentiment analysis and classification.**
@@ -43,7 +43,7 @@ Financial NLP is a challenging domain where interpretability, efficiency, and ro
 ## Collaborators
 
 - Matthew Millward ([GitHub](https://github.com/MMillward2012)) — DeepMind Intern, Durham University
-- Frank [Surname] — Research Collaborator, University of York
+- Frank Soboczenski — Research Collaborator, University of York
 - SAINTS (York Centre for Security, Analytics, and Information Technology)
 - DeepMind Research Ready Scheme
 
@@ -181,7 +181,7 @@ Below are real benchmarking results (batch size = 1, best latency) from the late
 | MiniLM (all-MiniLM-L6-v2, ONNX+CUDA)    | 0.790    | 0.790    | 2.22             | 86.8            |
 | DistilBERT (ONNX+CUDA)                  | 0.825    | 0.825    | 3.46             | 255.5           |
 | MobileBERT (ONNX+CUDA)                  | 0.817    | 0.816    | 5.54             | 94.5            |
-| FinBERT (ONNX+CUDA)                     | 0.839    | 0.839    | 6.78             | 419.0           |
+| FinBERT (ONNX+CUDA)                     | 0.839    | 0.839    | 220              | 419.0           |
 <p>
 	<img src="https://placehold.co/500x180?text=Explainability+Dashboard+Screenshot+Coming+Soon" alt="Explainability Dashboard Screenshot" width="60%">
 </p>
@@ -192,8 +192,9 @@ This project is part of my internship for the **Google DeepMind Research Ready S
 
 Special thanks to my supervisors and mentors at DeepMind, the University of York, and SAINTS for their invaluable guidance and support, especially:
 - Dr. Frank Soboczenski, University of York
-- Ana Cavalcanti, University of York
+- Dr. Ana Cavalcanti, University of York
 - The SAINTS research group
+- Abdul
 
 ---
 
