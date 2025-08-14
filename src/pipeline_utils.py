@@ -399,3 +399,4 @@ def calculate_model_size(model) -> Dict[str, Any]:
         'size_mb': size_mb,
         'size_human': f"{size_mb:.1f} MB" if size_mb < 1024 else f"{size_mb/1024:.1f} GB"
     }
+
