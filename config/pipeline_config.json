@@ -42,6 +42,28 @@
         "tokenizer_id": "distilbert-base-uncased",
         "num_labels": 3,
         "enabled": false
+      },
+      {
+        "name": "all-minilm-l6-v2",
+        "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+        "tokenizer_id": "sentence-transformers/all-MiniLM-L6-v2",
+        "num_labels": 3,
+        "enabled": false
+      },
+      {
+        "name": "smollm2-135m-instruct",
+        "model_id": "HuggingFaceTB/SmolLM2-135M-Instruct",
+        "tokenizer_id": "HuggingFaceTB/SmolLM2-135M-Instruct",
+        "num_labels": 3,
+        "enabled": false
+      },
+      {
+        "name": "smollm3-3b",
+        "model_id": "HuggingFaceTB/SmolLM3-3B",
+        "tokenizer_id": "HuggingFaceTB/SmolLM3-3B",
+        "num_labels": 3,
+        "enabled": false,
+        "notes": "Large model - requires ~6-8GB RAM minimum for training. Recommended for Colab with GPU."
       }
     ],
     "output_dir": "models",
@@ -66,7 +88,32 @@
       "min_delta": 0.001
     },
     "optimizer": "adamw",
-    "scheduler": "linear"
+    "scheduler": "linear",
+    "model_specific_configs": {
+      "small_models": {
+        "criteria": "parameters < 200M",
+        "batch_size": 8,
+        "learning_rate": 3e-5,
+        "num_epochs": 5,
+        "models": ["tinybert-financial-classifier"]
+      },
+      "medium_models": {
+        "criteria": "200M <= parameters < 1B",
+        "batch_size": 4,
+        "learning_rate": 2e-5,
+        "num_epochs": 3,
+        "models": ["finbert-tone", "distilbert-base"]
+      },
+      "large_models": {
+        "criteria": "parameters >= 1B",
+        "batch_size": 1,
+        "learning_rate": 1e-5,
+        "num_epochs": 2,
+        "gradient_accumulation_steps": 8,
+        "models": ["smollm3-3b"],
+        "memory_requirements": "6-8GB minimum"
+      }
+    }
   },
   
   "fine_tuning": {

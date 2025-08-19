@@ -1,0 +1,48 @@
+{
+  "model_info": {
+    "architecture": "pruned-distilbertforsequenceclassification",
+    "original_parameters": 66955779,
+    "pruned_parameters": 62956081,
+    "model_type": "pytorch",
+    "pruned": true
+  },
+  "pruning_results": {
+    "original_parameters": 66955779,
+    "pruned_parameters": 62956081,
+    "sparsity_achieved": 0.05973641199813384,
+    "accuracy_before": 0.91,
+    "accuracy_after": 0.91,
+    "accuracy_drop": 0.0,
+    "inference_speedup": 0.9625593121286021,
+    "memory_reduction": 0.04778912959850708,
+    "confidence_maintained": true
+  },
+  "pruning_history": [
+    {
+      "sparsity": 0.019912246857735738,
+      "accuracy": 0.91,
+      "speedup": 1.0446244772460636
+    },
+    {
+      "sparsity": 0.039824165140398105,
+      "accuracy": 0.91,
+      "speedup": 1.1827821320341405
+    },
+    {
+      "sparsity": 0.05973641199813384,
+      "accuracy": 0.91,
+      "speedup": 0.9226497252354747
+    },
+    {
+      "sparsity": 0.07964868872633091,
+      "accuracy": 0.91,
+      "speedup": 1.0701614027349327
+    },
+    {
+      "sparsity": 0.05973641199813384,
+      "accuracy": 0.91,
+      "speedup": 0.9625593121286021
+    }
+  ],
+  "export_timestamp": "2025-08-15 12:30:17"
+}
