@@ -42,10 +42,10 @@ Financial NLP is a challenging domain where interpretability, efficiency, and ro
 
 ## Collaborators
 
-- Matthew Millward ([GitHub](https://github.com/MMillward2012)) — DeepMind Intern, Durham University
-- Frank Soboczenski — Research Collaborator, University of York
-- SAINTS (York Centre for Security, Analytics, and Information Technology)
-- DeepMind Research Ready Scheme
+- [Matthew Millward](https://github.com/MMillward2012) — DeepMind Intern, Durham University
+- [Frank Soboczenski](https://github.com/h21k) — Research Collaborator, University of York
+- [SAINTS](https://www.saints-cdt.ai) (York Centre for Security, Analytics, and Information Technology)
+- Google DeepMind Research Ready Scheme
 
 *If you contributed to this project and would like to be listed, please open a pull request or contact the maintainer.*
 
