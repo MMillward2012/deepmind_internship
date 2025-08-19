@@ -101,17 +101,16 @@ deepmind_internship/
 │   ├── tinybert-financial-classifier-fine-tuned/
 │   ├── tinybert-financial-classifier-pruned/
 │
-├── notebooks_generalized/    # Generalized and advanced pipeline notebooks
-│   ├── 0_setup_generalized.ipynb
-│   ├── 1_data_processing_generalized.ipynb
-│   ├── 2_train_models_generalized.ipynb
-│   ├── 3_convert_to_onnx_generalized.ipynb
-│   ├── 4_colab_benchmarks.ipynb
-│   ├── 5_explainability_generalized.ipynb
-│   ├── 6_explainability_fine_tuning.ipynb
-│   ├── 6_fine_tune_generalized.ipynb
-│   ├── 6_fine_tuning_generalized.ipynb
-│   └── 7_benchmarks_generalized.ipynb
+├── notebooks/   			  # Generalised and advanced pipeline notebooks
+│   ├── 0_setup.ipynb
+│   ├── 1_data_processing.ipynb
+│   ├── 2_train_models.ipynb
+│   ├── 3_convert_to_onnx.ipynb
+│   ├── 4_explainability.ipynb
+│   ├── 5a_explainability_fine_tuning.ipynb
+│   ├── 5b_fine_tune.ipynb
+│   ├── 6_colab_benchmarks.ipynb
+│   └── 6_benchmarks.ipynb
 │
 ├── results/                  # Benchmarking and evaluation outputs
 │   ├── benchmark_results.csv
@@ -194,7 +193,7 @@ Special thanks to my supervisors and mentors at DeepMind, the University of York
 - Dr. Frank Soboczenski, University of York
 - Dr. Ana Cavalcanti, University of York
 - The SAINTS research group
-- Abdul
+- The other interns (Abdul, Anthony, Luke, Shehab, Sam, Maruf, Sky, Fernanda, James, Daniel and Aaron)
 
 ---
 
