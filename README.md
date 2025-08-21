@@ -189,7 +189,7 @@ Special thanks to my supervisors and mentors at DeepMind, the University of York
 - Dr. Frank Soboczenski, University of York
 - Dr. Ana Cavalcanti, University of York
 - The SAINTS research group
-- The other interns (Abdul, Anthony, Luke, Shehab, Sam, Maruf, Sky, Fernanda, James, Daniel and Aaron)
+- The other interns ([Abdul](https://www.linkedin.com/in/abdul-raheem-nazir-a03370251/), [Anthony](https://www.linkedin.com/in/anthony-fineston-robertson/), Luke, Shehab, Sam, Maruf, Sky, Fernanda, James, Daniel and Aaron)
 
 ---
 
