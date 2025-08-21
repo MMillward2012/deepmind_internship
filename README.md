@@ -181,9 +181,6 @@ Below are real benchmarking results (batch size = 1, best latency) from the late
 | DistilBERT (ONNX+CUDA)                  | 0.825    | 0.825    | 3.46             | 255.5           |
 | MobileBERT (ONNX+CUDA)                  | 0.817    | 0.816    | 5.54             | 94.5            |
 | FinBERT (ONNX+CUDA)                     | 0.839    | 0.839    | 220              | 419.0           |
-<p>
-	<img src="https://placehold.co/500x180?text=Explainability+Dashboard+Screenshot+Coming+Soon" alt="Explainability Dashboard Screenshot" width="60%">
-</p>
 
 
 
