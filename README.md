@@ -42,10 +42,10 @@ Financial NLP is a challenging domain where interpretability, efficiency, and ro
 
 ## Collaborators
 
-- Matthew Millward ([GitHub](https://github.com/MMillward2012)) — DeepMind Intern, Durham University
-- Frank Soboczenski — Research Collaborator, University of York
-- SAINTS (York Centre for Security, Analytics, and Information Technology)
-- DeepMind Research Ready Scheme
+- [Matthew Millward](https://github.com/MMillward2012) — DeepMind Intern, Durham University
+- [Frank Soboczenski](https://github.com/h21k) — Research Collaborator, University of York
+- [SAINTS](https://www.saints-cdt.ai) (York Centre for Security, Analytics, and Information Technology)
+- Google DeepMind Research Ready Scheme
 
 *If you contributed to this project and would like to be listed, please open a pull request or contact the maintainer.*
 
@@ -101,17 +101,16 @@ deepmind_internship/
 │   ├── tinybert-financial-classifier-fine-tuned/
 │   ├── tinybert-financial-classifier-pruned/
 │
-├── notebooks_generalized/    # Generalized and advanced pipeline notebooks
-│   ├── 0_setup_generalized.ipynb
-│   ├── 1_data_processing_generalized.ipynb
-│   ├── 2_train_models_generalized.ipynb
-│   ├── 3_convert_to_onnx_generalized.ipynb
-│   ├── 4_colab_benchmarks.ipynb
-│   ├── 5_explainability_generalized.ipynb
-│   ├── 6_explainability_fine_tuning.ipynb
-│   ├── 6_fine_tune_generalized.ipynb
-│   ├── 6_fine_tuning_generalized.ipynb
-│   └── 7_benchmarks_generalized.ipynb
+├── notebooks/   			  # Generalised and advanced pipeline notebooks
+│   ├── 0_setup.ipynb
+│   ├── 1_data_processing.ipynb
+│   ├── 2_train_models.ipynb
+│   ├── 3_convert_to_onnx.ipynb
+│   ├── 4_explainability.ipynb
+│   ├── 5a_explainability_fine_tuning.ipynb
+│   ├── 5b_fine_tune.ipynb
+│   ├── 6_colab_benchmarks.ipynb
+│   └── 6_benchmarks.ipynb
 │
 ├── results/                  # Benchmarking and evaluation outputs
 │   ├── benchmark_results.csv
@@ -194,7 +193,7 @@ Special thanks to my supervisors and mentors at DeepMind, the University of York
 - Dr. Frank Soboczenski, University of York
 - Dr. Ana Cavalcanti, University of York
 - The SAINTS research group
-- Abdul
+- The other interns (Abdul, Anthony, Luke, Shehab, Sam, Maruf, Sky, Fernanda, James, Daniel and Aaron)
 
 ---
 
