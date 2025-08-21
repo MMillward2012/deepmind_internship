@@ -211,5 +211,6 @@ If you use this repository or pipeline in your research, please cite as:
 
 ## License
 
-This repository is for research and educational use.  
-See `LICENSE` for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+Copyright (c) 2025 Matthew Millward
