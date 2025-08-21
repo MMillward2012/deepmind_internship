@@ -1,7 +1,6 @@
 <div>
 	<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/DeepMind_new_logo.svg" alt="DeepMind Logo" width="180" style="margin: 0 40px 0 0;"/>
 	<img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face Logo" width="180"/>
-	<img scr="saints logo" alt="Saints logo" width="180"/>
 </div>
 
 # DeepMind Financial NLP Explainability & Optimisation Suite (for Small Language Models)
