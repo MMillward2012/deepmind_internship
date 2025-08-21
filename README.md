@@ -108,7 +108,7 @@ deepmind_internship/
 │   ├── 3_convert_to_onnx.ipynb
 │   ├── 4_explainability.ipynb
 │   ├── 5a_explainability_fine_tuning.ipynb
-│   ├── 5b_fine_tune.ipynb
+│   ├── 5b_fine_tune_comparison.ipynb
 │   ├── 6_colab_benchmarks.ipynb
 │   └── 6_benchmarks.ipynb
 │
@@ -148,19 +148,19 @@ pip install -r requirements.txt
 - Edit `config/pipeline_config.json` to select your model (e.g., TinyBERT, DistilBERT, MiniLM, MobileBERT, FinBERT), set hyperparameters, and choose data sources. No code changes required.
 
 ### 5. Train your model
-- Run the training notebook: `notebooks_generalized/2_train_models_generalized.ipynb`.
+- Run the training notebook: `notebooks/2_train_models.ipynb`.
 - Supports Hugging Face and PyTorch models.
 
-### 6. Convert to ONNX (and quantize)
-- Use `notebooks_generalized/3_convert_to_onnx_generalized.ipynb` to export your model for fast inference. (Quantization support coming soon.)
+### 6. Convert to ONNX (and quantise)
+- Use `notebooks/3_convert_to_onnx.ipynb` to export your model for fast inference. (Quantisation support coming soon.)
 
 ### 7. Run explainability and error analysis
-- Open `notebooks_generalized/5_explainability_generalized.ipynb` to launch the interactive dashboard.
-- Analyze errors, generate SHAP/LIME/attention/GradCAM explanations, and get recommendations for fine-tuning.
+- Open `notebooks/4_explainability.ipynb` to launch the interactive dashboard.
+- Analyse errors, generate SHAP/LIME/attention/GradCAM explanations, and get recommendations for fine-tuning.
 
 ### 8. Fine-tune and benchmark
-- Use `notebooks_generalized/6_fine_tune_generalized.ipynb` for targeted, analysis-driven fine-tuning.
-- Benchmark your models in `notebooks_generalized/4_colab_benchmarks.ipynb` or `7_benchmarks_generalized.ipynb` for latency, throughput, and memory.
+- Use `notebooks/5a_explainability_fine_tune.ipynb` for targeted, analysis-driven fine-tuning.
+- Benchmark your models in `notebooks/6_colab_benchmarks.ipynb` or `6_benchmarks.ipynb` for latency, throughput, and memory.
 
 ### 9. Deploy or iterate
 - Export your best models from the `models/` directory for deployment, or iterate with new configs and data.
